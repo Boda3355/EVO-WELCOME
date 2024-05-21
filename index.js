@@ -65,14 +65,15 @@ client.on("ready", () => {
   client.user.setPresence({
     activities: [
       {
-        name: "Evo Bots",
-        type: "STREAMING",
+        name: "You Join The Server",
+        type: "WATCHING",
         url: "https://twitch.tv/evo_bots",
       },
     ],
-    status: "dnd",
+    status: "idle",
   });
 });
+      //======================================
 
 client.on("inviteCreate", async (invite) => {
   const guildInvites = invites[invite.guild.id];
